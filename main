@@ -1,0 +1,6 @@
+function main
+    im1=imread("./img1.png");
+    im2=imread("./img2.png");
+    [matchedPts1,matchedPts2]=features(im1,im2);
+    figure; showmtchedfeatures(im1,im2,matchedpts1,matchedPts2);
+end
